@@ -1,14 +1,13 @@
 async function showBak(){
-	fetch("./backups/FILES.txt").then((response) => {
-		const txtPromise = response.text();
+	const response = await fetch("./backups/FILES.txt");
+	const filetxt = await response.text();
 
-		txtPromise.then((data) => {
-			files = response.text().toString().split("\n");
-			for(var i in files){
-				createLink(files[i], "./backups/"+files[i]);
-			}
-		});
-	});
+	console.log(filetxt);
+
+	files = filetxt.toString().split("\n");
+	for(var i in files){
+		createLink(files[i], "./backups/"+files[i]);
+	}
 }
 
 function createLink(name, addr){
