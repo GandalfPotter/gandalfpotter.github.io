@@ -1,3 +1,3 @@
 - first backup on 2023-03-19_14-24
 - reverted 2023-03-24_11-XX to 2023-03-22_02-41 cuz server wide grief
-	ip-banned Euat and oleg123
+	banned-by-name Euat and oleg123
